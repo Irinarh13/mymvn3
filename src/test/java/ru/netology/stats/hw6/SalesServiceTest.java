@@ -9,8 +9,8 @@ public class SalesServiceTest {
         SalesService service = new SalesService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18}; // Сумма всех месяцев
 
-        int expectNumMix = 180;
-        int actualNumMix = service.sumSales(sales);
+        long expectNumMix = 180;
+        long actualNumMix = service.sumSales(sales);
 
         Assertions.assertEquals(expectNumMix, actualNumMix);
     }
@@ -20,8 +20,8 @@ public class SalesServiceTest {
         SalesService service = new SalesService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};  // Среднее значение
 
-        int expectedAver = 15;
-        int actualAver = service.averageSumSale(sales);
+        long expectedAver = 15;
+        long actualAver = service.averageSumSale(sales);
 
         Assertions.assertEquals(expectedAver, actualAver);
     }
@@ -31,8 +31,8 @@ public class SalesServiceTest {
         SalesService service = new SalesService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18}; // Максимальное значение
 
-        int expectNumMax = 8;
-        int actualNumMax = service.maxSales(sales);
+        long expectNumMax = 8;
+        long actualNumMax = service.maxSales(sales);
 
         Assertions.assertEquals(expectNumMax, actualNumMax);
     }
@@ -42,8 +42,8 @@ public class SalesServiceTest {
         SalesService service = new SalesService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18}; // Минимальное значение
 
-        int expectNumMix = 9;
-        int actualNumMix = service.minSales(sales);
+        long expectNumMix = 9;
+        long actualNumMix = service.minSales(sales);
 
         Assertions.assertEquals(expectNumMix, actualNumMix);
     }
@@ -53,8 +53,8 @@ public class SalesServiceTest {
         SalesService service = new SalesService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};  // Меньше среднего
 
-        int expectedLessAver = 7;
-        int actualLessAver = service.getMinSale(sales);
+        long expectedLessAver = 7;
+        long actualLessAver = service.getMinSale(sales);
 
         Assertions.assertEquals(expectedLessAver, actualLessAver);
     }
@@ -64,8 +64,8 @@ public class SalesServiceTest {
         SalesService service = new SalesService();
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};  // Больше среднего
 
-        int expectedMoreAver = 7;
-        int actualMoreAver = service.getMaxSale(sales);
+        long expectedMoreAver = 7;
+        long actualMoreAver = service.getMaxSale(sales);
 
         Assertions.assertEquals(actualMoreAver, expectedMoreAver);
     }
